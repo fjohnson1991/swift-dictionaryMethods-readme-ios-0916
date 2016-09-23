@@ -74,7 +74,7 @@ if var films = movies["The Fast and the Furious"] {
 }
 
 if let fastMovies = movies["The Fast and the Furious"] {
-    for (index, film) in fastMovies.enumerated() {
+    for (index, film) in fastMovies.enumerate() {
         print("\(index + 1). \(film)")
     }
 }
@@ -91,7 +91,7 @@ if let fast3rFilms = movies["The Fast and the Furious"] {
     print("YAY! no more Fast & Furious movies!")
 }
 
-movies.removeValue(forKey: "The Fast and the Furious")
+movies.removeValueForKey("The Fast and the Furious")
 
 
 
